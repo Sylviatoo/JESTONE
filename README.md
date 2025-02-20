@@ -1,3 +1,119 @@
+# JESTONE 🎬
+
+## 🌟 Project Overview
+**JESTONE** is a full-stack web application designed to manage playlists, favorite videos, and categorized content. This project was developed by **Julien**, **Emma**, **Sylvia**, and **Tom** as part of our final project at the **Wild Code School** for the **Full-Stack Web and Mobile Developer** certification.
+
+## 🚀 Features
+- 🔒 **Authentication:** Secure user login and registration with JWT tokens stored as HttpOnly cookies.
+- 🎥 **Video Management:** Browse, search, and view videos.
+- 📚 **Playlists:** Create, edit, and delete playlists.
+- ❤️ **Favorites:** Add and manage favorite videos.
+- 🏷 **Categories:** Organize videos by category.
+- 📤 **File Upload:** Upload user avatars with secure storage.
+
+## 🛠️ Tech Stack
+### **Frontend:**
+- ⚛️ React with TypeScript
+- 💅 TailwindCSS for styling
+- ⚙️ Context API for state management
+
+### **Backend:**
+- 🌐 Node.js with Express
+- 🛢️ MySQL database
+- 🔑 JWT for authentication
+- 🛡️ Argon2 for password hashing
+
+## 🎬 Project Setup
+
+### 1. **Clone the Repository**
+```bash
+git clone https://github.com/your-github-username/jestone.git
+cd jestone
+```
+
+### 2. **Backend Setup**
+```bash
+cd backend
+npm install
+```
+
+- Create a `.env` file in the `backend` folder with the following variables:
+```env
+APP_SECRET=yourSecretKey
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=yourPassword
+DB_NAME=jestone
+NODE_ENV=development
+```
+
+- **Database Migration:** Ensure MySQL is running and execute the following:
+```bash
+npx prisma db push
+```
+
+- **Run the Backend:**
+```bash
+npm start
+```
+
+### 3. **Frontend Setup**
+```bash
+cd ../frontend
+npm install
+```
+
+- **Run the Frontend:**
+```bash
+npm run dev
+```
+
+## 📸 Screenshots
+🚧 *Coming soon...*
+
+## ✅ API Endpoints
+### **Authentication:**
+- `POST /api/users/login` – User login
+- `POST /api/users/logout` – User logout
+- `GET /api/verify-auth` – Verify user authentication
+
+### **Videos:**
+- `GET /api/videos` – Browse all videos
+- `GET /api/videos/:id` – Read a specific video
+- `POST /api/videos` – Add a new video
+
+### **Playlists:**
+- `GET /api/playlists/:userId` – Get user playlists
+- `POST /api/playlists/:userId` – Create a new playlist
+- `DELETE /api/playlists/:id` – Remove a playlist
+
+## 🔒 Environment Variables
+Ensure these variables are set in both frontend and backend `.env` files:
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+## 💡 Future Enhancements
+- 🌍 Multi-language support
+- 📊 Admin dashboard for user and content management
+- 🔔 Real-time notifications
+
+## 🤝 Contributors
+- **Julien** – Backend & Database
+- **Emma** – Frontend & UI/UX
+- **Sylvia** – API & Middleware
+- **Tom** – Project Management & Testing
+
+## 📄 License
+This project is licensed under the MIT License.
+
+## 🙌 Acknowledgments
+Special thanks to **Wild Code School** for guiding us through our journey as full-stack developers!
+
+---
+
+💌 *We'd love to hear your feedback! Feel free to open issues or contribute to the project.*
+
 # js-toulouse-origins-digital
 
 Ce projet est un monorepo JS, suivant l'architecture React-Express-MySQL telle qu'enseignée à la Wild Code School (v7.1.7) :
