@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:ital,wght@0,100..900;1,100..900&family=Hind+Madurai:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-text-color);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+:root {
+  --background-color: #121221;
+  --font-title: "Audiowide", sans-serif;
+  --primary-font: "Exo", sans-serif;
+  --secondary-font: "Hind Madurai", sans serif;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #121221;
+  --link-text-color: #dd25b6;
+  --grandiant-nav: linear-gradient(180deg, #62dde3 0%, #31d0d9 100%);
+  --button-color: rgb(172, 252, 255);
+  --transparence-color: #d9d9d918;
+}
+
+.container {
+  padding-bottom: 10px;
+}
+
+main {
+  padding-top: 80px;
+}
+
+img {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #121221;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #333344;
+  border-radius: 0;
+  border: none;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #444455;
+}
+
+body::-webkit-scrollbar-button:single-button {
+  background-color: #1a1a2a;
+  height: 16px;
+}
+
+body::-webkit-scrollbar-button:hover {
+  background-color: #2a2a3a;
+}

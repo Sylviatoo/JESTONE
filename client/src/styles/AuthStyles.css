@@ -1,0 +1,160 @@
+.modal-user-login-signup {
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  animation: modalSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.login-signup-title {
+  font-family: var(--primary-font);
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0 25px;
+  color: white;
+}
+
+.login-title {
+  background: linear-gradient(45deg, #31d0d9, #9de6ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-field {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 14px 18px;
+  font-size: 15px;
+  color: white;
+  width: 85%;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #31d0d9;
+  box-shadow: 0 0 0 2px rgba(49, 208, 217, 0.2);
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.forgot-password-link {
+  font-family: var(--primary-font);
+  color: #31d0d9;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 5px 0 20px;
+  display: block;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding-right: 40px;
+}
+
+.forgot-password-link:hover {
+  color: #9de6ea;
+  transform: translateY(-1px);
+}
+
+.primary-button {
+  width: 85%;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(135deg, #31d0d9, #9de6ea);
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+  margin: 10px 0;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #9de6ea, #31d0d9);
+  box-shadow: 0 5px 15px rgba(49, 208, 217, 0.4);
+}
+
+.switch-link {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.switch-button {
+  background: none;
+  border: none;
+  color: #31d0d9;
+  cursor: pointer;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.switch-button:hover {
+  color: #9de6ea;
+}
+
+@keyframes modalSlideIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -45%) scale(0.95);
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.forgot-password,
+.reset-password {
+  animation: scaleIn 0.4s ease-out;
+}
+
+.info-text {
+  font-family: var(--secondary-font);
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+  }
+  200% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
