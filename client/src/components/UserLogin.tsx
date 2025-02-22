@@ -102,7 +102,7 @@ export default function UserLogin() {
     setResponseMessage("");
 
     if (!user.email || !user.password) {
-      setResponseMessage("Veuillez remplir tous les champs.");
+      setResponseMessage("Une erreur s'est produite. Veuillez remplir tous les champs.");
       return;
     }
 
@@ -139,7 +139,7 @@ export default function UserLogin() {
         setResponseMessage(errorData.message || "Identifiants incorrects.");
       }
     } catch (error) {
-      setResponseMessage("Une erreur s'est produite. Veuillez réessayer.");
+      setResponseMessage("Une erreur s'est produite. Identifiants incorrects.");
     }
   };
 
